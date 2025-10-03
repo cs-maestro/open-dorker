@@ -42,7 +42,7 @@ We use webdriver-manager to automatically fetch a matching ChromeDriver.
 ### 3) Run (interactive)
 
 ```bash
-python -m open_dorker.cli
+python -m src.open_dorker.cli
 ```
 - Pick **Google, DuckDuckGo, or Both**
 - Enter dork parameters (comma-separated), e.g.: _site_, _intext_, _intitle_
@@ -52,7 +52,7 @@ CSV will be written to results.csv by default (customize with --out).
 
 ### 4) Run (power users)
 ```bash
-python -m open_dorker.cli \
+python -m src.open_dorker.cli \
   --engine both \
   --params site,intext,intitle \
   --terms site="docs.google.com,forms.gle" intext="password reset,confidential" intitle="login,register" \
